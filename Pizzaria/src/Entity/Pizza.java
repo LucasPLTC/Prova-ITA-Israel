@@ -45,7 +45,10 @@ public class Pizza {
         Pizza.allIngredients = allIngredients;
     }
 
-    public Pizza() {
-
+    @Override
+    public String toString() {
+        return "O Total de ingredientes desta pizza é : "+ingredientes.toString()+
+                '\n'+
+                "O Total de Ingredientes utilizados na pizzaria foi: "+ allIngredients.toString();
     }
 }

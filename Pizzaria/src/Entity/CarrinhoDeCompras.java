@@ -1,5 +1,6 @@
 package Entity;
 
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,5 +24,8 @@ public class CarrinhoDeCompras {
         return compras.stream().mapToLong(pizza -> pizza.getPreço()).sum();
     }
 
-
+    @Override
+    public String toString() {
+        return MessageFormat.format("O valor todal da compra é de: R${0}.", getValorTotal());
+    }
 }

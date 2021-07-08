@@ -23,7 +23,7 @@ public class Main {
         c.setCompras(p2);
         c.setCompras(p3);
 
-        System.out.println(c.getValorTotal());
-        System.out.println(p1.getAllIngredients());
+        System.out.println(c);
+        System.out.println(p1);
     }
 }
